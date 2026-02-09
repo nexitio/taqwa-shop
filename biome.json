@@ -1,0 +1,66 @@
+{
+    "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "useIgnoreFile": true
+    },
+    "files": {
+        "ignoreUnknown": true,
+        "includes": [
+            "**",
+            "!node_modules",
+            "!.next",
+            "!dist",
+            "!build"
+        ]
+    },
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 2
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "a11y": {
+                "useFocusableInteractive": "off",
+                "useValidAnchor": "off"
+            },
+            "security": {
+                "noDangerouslySetInnerHtml": "off"
+            },
+            "complexity": {
+                "noUselessSwitchCase": "off"
+            },
+            "correctness": {
+                "noUnusedVariables": "off",
+                "useExhaustiveDependencies": "off"
+            },
+            "recommended": true,
+            "style": {
+                "noNonNullAssertion": "off",
+                "useImportType": "off"
+            },
+            "suspicious": {
+                "noUnknownAtRules": "off",
+                "noImplicitAnyLet": "off",
+                "noExplicitAny": "off",
+                "noDocumentCookie": "off",
+                "noArrayIndexKey": "off",
+                "noAssignInExpressions": "off"
+            }
+        },
+        "domains": {
+            "next": "recommended",
+            "react": "recommended"
+        }
+    },
+    "assist": {
+        "actions": {
+            "source": {
+                "organizeImports": "on"
+            }
+        }
+    }
+}
